@@ -1,0 +1,11 @@
+D:\Fac\An 3\sem 2\II\Proiect_II\bin\Debug\Proiect_II.exe.config
+D:\Fac\An 3\sem 2\II\Proiect_II\bin\Debug\Proiect_II.exe
+D:\Fac\An 3\sem 2\II\Proiect_II\bin\Debug\Proiect_II.pdb
+D:\Fac\An 3\sem 2\II\Proiect_II\obj\Debug\Proiect_II.csproj.AssemblyReference.cache
+D:\Fac\An 3\sem 2\II\Proiect_II\obj\Debug\Proiect_II.FormLogin.resources
+D:\Fac\An 3\sem 2\II\Proiect_II\obj\Debug\Proiect_II.Properties.Resources.resources
+D:\Fac\An 3\sem 2\II\Proiect_II\obj\Debug\Proiect_II.csproj.GenerateResource.cache
+D:\Fac\An 3\sem 2\II\Proiect_II\obj\Debug\Proiect_II.csproj.CoreCompileInputs.cache
+D:\Fac\An 3\sem 2\II\Proiect_II\obj\Debug\Proiect_II.exe
+D:\Fac\An 3\sem 2\II\Proiect_II\obj\Debug\Proiect_II.pdb
+D:\Fac\An 3\sem 2\II\Proiect_II\obj\Debug\Proiect_II.FormHome.resources
