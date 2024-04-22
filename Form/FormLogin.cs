@@ -62,7 +62,7 @@ namespace Proiect_II
 
                 int count = (int)command.ExecuteScalar();
 
-                if (count > 0)
+                if (count > 0 && GetUserId(username) < 5)
                 {
                     string nameQuery = "SELECT u.first_name, u.last_name FROM [User] u INNER JOIN Login l ON u.username_Id = l.username_Id WHERE l.username=@username";
                     using (SqlCommand nameCommand = new SqlCommand(nameQuery, myCon))
@@ -77,7 +77,28 @@ namespace Proiect_II
                         reader.Close();
                     }
 
-                    FormHome form = new FormHome();
+                    FormManager form = new FormManager();
+                    form.Show();
+                    this.Hide();
+                    return;
+                }
+                else
+                     if (count > 0 && GetUserId(username) >= 5)
+                {
+                    string nameQuery = "SELECT u.first_name, u.last_name FROM [Owner] u INNER JOIN Login l ON u.username_Id = l.username_Id WHERE l.username=@username";
+                    using (SqlCommand nameCommand = new SqlCommand(nameQuery, myCon))
+                    {
+                        nameCommand.Parameters.AddWithValue("@username", username);
+                        SqlDataReader reader = nameCommand.ExecuteReader();
+                        if (reader.Read())
+                        {
+                            firstName = reader["first_name"].ToString();
+                            lastName = reader["last_name"].ToString();
+                        }
+                        reader.Close();
+                    }
+
+                    FormUser form = new FormUser();
                     form.Show();
                     this.Hide();
                     return;
@@ -86,6 +107,16 @@ namespace Proiect_II
                 {
                     MessageBox.Show("Invalid username or password. Please try again.");
                 }
+            }
+        }
+
+        private int GetUserId(string username)
+        {
+            string getUserIdQuery = "SELECT username_Id FROM Login WHERE username=@username";
+            using (SqlCommand getUserIdCommand = new SqlCommand(getUserIdQuery, myCon))
+            {
+                getUserIdCommand.Parameters.AddWithValue("@username", username);
+                return (int)getUserIdCommand.ExecuteScalar();
             }
         }
 

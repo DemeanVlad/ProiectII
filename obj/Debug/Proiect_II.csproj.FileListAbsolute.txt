@@ -8,4 +8,5 @@ D:\Fac\An 3\sem 2\II\Proiect_II\obj\Debug\Proiect_II.csproj.GenerateResource.cac
 D:\Fac\An 3\sem 2\II\Proiect_II\obj\Debug\Proiect_II.csproj.CoreCompileInputs.cache
 D:\Fac\An 3\sem 2\II\Proiect_II\obj\Debug\Proiect_II.exe
 D:\Fac\An 3\sem 2\II\Proiect_II\obj\Debug\Proiect_II.pdb
-D:\Fac\An 3\sem 2\II\Proiect_II\obj\Debug\Proiect_II.FormHome.resources
+D:\Fac\An 3\sem 2\II\Proiect_II\obj\Debug\Proiect_II.FormManager.resources
+D:\Fac\An 3\sem 2\II\Proiect_II\obj\Debug\Proiect_II.FormUser.resources

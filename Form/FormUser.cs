@@ -11,13 +11,12 @@ using System.Windows.Forms;
 
 namespace Proiect_II
 {
-    public partial class FormHome : Form
+    public partial class FormUser : Form
     {
         SqlConnection myCon = new SqlConnection();
-        public FormHome()
+        public FormUser()
         {
             InitializeComponent();
-            
             myCon.ConnectionString = @"Data Source = BETAKA\SQLEXPRESS; Initial Catalog = Proiect_II_DB; Integrated Security = True";
             myCon.Open();
         }
@@ -28,12 +27,16 @@ namespace Proiect_II
             panelSlide.Height = btn.Height;
         }
 
-      
 
-        private void FormHome_Load(object sender, EventArgs e)
+        private void FormUser_Load(object sender, EventArgs e)
         {
+           
             labelDateTime.Text = DateTime.Now.ToString("dddd, dd MMMM yyyy HH:mm:ss");
             labelWelcomeUser.Text = "Welcome, " + FormLogin.firstName + " " + FormLogin.lastName + "!";
+        }
+        private void buttonSave_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void labelLogOut_Click(object sender, EventArgs e)
@@ -51,24 +54,29 @@ namespace Proiect_II
             }
         }
 
-        private void buttonDashboard_Click(object sender, EventArgs e)
+        private void buttonReservation_Click(object sender, EventArgs e)
         {
-            MovePanel(buttonDashboard);
+            MovePanel(buttonReservation);
+            tabControlReservation.Show();
         }
 
-        private void buttonClient_Click(object sender, EventArgs e)
+        private void buttonHome_Click(object sender, EventArgs e)
         {
-            MovePanel(buttonClient);
+            MovePanel(buttonHome);
+            tabControlReservation.Hide();
         }
 
         private void buttonRoom_Click(object sender, EventArgs e)
         {
             MovePanel(buttonRoom);
+            tabControlReservation.Hide();
         }
 
-        private void buttonReservation_Click(object sender, EventArgs e)
+        private void buttonAbout_Click(object sender, EventArgs e)
         {
-            MovePanel(buttonReservation);
+            MovePanel(buttonAbout);
+            tabControlReservation.Hide();
         }
+
     }
 }

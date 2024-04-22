@@ -52,25 +52,54 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataClasses1.dbml</DependentUpon>
     </Compile>
-    <Compile Include="FormHome.cs">
+    <Compile Include="Form\FormUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormHome.Designer.cs">
-      <DependentUpon>FormHome.cs</DependentUpon>
+    <Compile Include="Form\FormUser.Designer.cs">
+      <DependentUpon>FormUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormLogin.cs">
+    <Compile Include="Form\FormManager.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormLogin.Designer.cs">
+    <Compile Include="Form\FormManager.Designer.cs">
+      <DependentUpon>FormManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="Proiect_II_DBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Proiect_II_DBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Proiect_II_DBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Proiect_II_DBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Proiect_II_DBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Proiect_II_DBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Proiect_II_DBDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Proiect_II_DBDataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormHome.resx">
-      <DependentUpon>FormHome.cs</DependentUpon>
+    <EmbeddedResource Include="Form\FormManager.resx">
+      <DependentUpon>FormManager.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormLogin.resx">
+    <EmbeddedResource Include="Form\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormUser.resx">
+      <DependentUpon>FormUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -84,6 +113,50 @@
     </None>
     <None Include="DataClasses1.dbml.layout">
       <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
+    <None Include="Proiect_II_DBDataSet.xsc">
+      <DependentUpon>Proiect_II_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Proiect_II_DBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Proiect_II_DBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Proiect_II_DBDataSet.xss">
+      <DependentUpon>Proiect_II_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Proiect_II_DBDataSet1.xsc">
+      <DependentUpon>Proiect_II_DBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Proiect_II_DBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Proiect_II_DBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Proiect_II_DBDataSet1.xss">
+      <DependentUpon>Proiect_II_DBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Proiect_II_DBDataSet2.xsc">
+      <DependentUpon>Proiect_II_DBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Proiect_II_DBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Proiect_II_DBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Proiect_II_DBDataSet2.xss">
+      <DependentUpon>Proiect_II_DBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Proiect_II_DBDataSet3.xsc">
+      <DependentUpon>Proiect_II_DBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Proiect_II_DBDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Proiect_II_DBDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Proiect_II_DBDataSet3.xss">
+      <DependentUpon>Proiect_II_DBDataSet3.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
